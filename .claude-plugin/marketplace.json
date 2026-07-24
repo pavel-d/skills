@@ -1,0 +1,14 @@
+{
+  "name": "ai-skills",
+  "owner": {
+    "name": "pavel-d",
+    "email": "pavlo.dot@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "ai-skills",
+      "source": "./",
+      "description": "Portable engineering skills for coding agents. Works with Claude Code and Codex from the same SKILL.md files."
+    }
+  ]
+}

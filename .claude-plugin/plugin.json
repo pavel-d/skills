@@ -1,0 +1,19 @@
+{
+  "name": "ai-skills",
+  "displayName": "AI Skills",
+  "version": "0.1.0",
+  "description": "Portable engineering skills for coding agents. Works with Claude Code and Codex from the same SKILL.md files.",
+  "author": {
+    "name": "pavel-d",
+    "email": "pavlo.dot@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "skills",
+    "architecture",
+    "clean-architecture",
+    "code-review",
+    "refactoring"
+  ],
+  "skills": "./skills/"
+}
