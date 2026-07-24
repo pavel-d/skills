@@ -44,7 +44,7 @@ $architecture-review review the current branch
 
 ```
 /plugin marketplace add pavel-d/skills
-/plugin install ai-skills@ai-skills
+/plugin install ai-skills@pavel-d
 /reload-plugins
 ```
 
@@ -52,7 +52,7 @@ To try it from a local checkout, point the marketplace at the directory instead:
 
 ```
 /plugin marketplace add /path/to/skills
-/plugin install ai-skills@ai-skills
+/plugin install ai-skills@pavel-d
 ```
 
 Plugin components are namespaced — invoke explicitly with `/ai-skills:architecture-review` or
