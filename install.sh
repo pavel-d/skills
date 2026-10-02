@@ -15,10 +15,12 @@ usage() {
 Usage: $(basename "$0") <target> [project-dir]
 
 Targets:
-  codex-user      \$HOME/.agents/skills          (all Codex sessions)
-  codex-project   <project-dir>/.agents/skills   (one repository)
-  claude-user     \$HOME/.claude/skills          (all Claude Code sessions)
-  claude-project  <project-dir>/.claude/skills   (one repository)
+  codex-user        \$HOME/.agents/skills                  (all Codex sessions)
+  codex-project     <project-dir>/.agents/skills           (one repository)
+  claude-user       \$HOME/.claude/skills                  (all Claude Code sessions)
+  claude-project    <project-dir>/.claude/skills           (one repository)
+  opencode-user     \$HOME/.config/opencode/skills         (all opencode sessions)
+  opencode-project  <project-dir>/.opencode/skills         (one repository)
 
 project-dir defaults to the current directory and is only used by the
 *-project targets.
@@ -41,6 +43,8 @@ case "$target" in
     codex-project)  dest="$project_dir/.agents/skills" ;;
     claude-user)    dest="$HOME/.claude/skills" ;;
     claude-project) dest="$project_dir/.claude/skills" ;;
+    opencode-user)    dest="$HOME/.config/opencode/skills" ;;
+    opencode-project) dest="$project_dir/.opencode/skills" ;;
     -h|--help)      usage; exit 0 ;;
     *)
         echo "error: unknown target '$target'" >&2

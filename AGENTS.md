@@ -11,6 +11,7 @@ both Claude Code and Codex.
 | [`architecture-review`](skills/architecture-review/SKILL.md) | Reviewing a diff, branch, or module against the Clean Architecture and DDD rulebooks. Loads both rulebooks and reports violations. |
 | [`clean-architecture`](skills/clean-architecture/SKILL.md) | Writing, placing, reviewing, or refactoring code in a layered codebase: dependency direction, use-case boundaries, ports and adapters, keeping frameworks/DB/UI replaceable. |
 | [`domain-driven-design`](skills/domain-driven-design/SKILL.md) | Modeling a business domain: ubiquitous language, bounded contexts, entities vs value objects, aggregate boundaries, repositories, factories, specifications, anti-corruption layers. |
+| [`pentest-dispatch`](skills/pentest-dispatch/SKILL.md) | Coordinating an authorized, scope-locked penetration test across parallel subagents (recon → fan-out → synthesis). Requires written authorization and a locked `scope.json`; enforces no-DoS/SE/PII/out-of-scope guardrails. |
 
 An agent that does not auto-discover skills should read the relevant `SKILL.md` in full before
 starting work that matches its trigger conditions, and treat it as binding policy for that task.

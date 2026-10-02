@@ -13,6 +13,7 @@ common denominator across agents — plus `references/` for material loaded only
 | [`architecture-review`](skills/architecture-review/SKILL.md) | Reviews a diff, branch, or module against both rulebooks below and reports violations with locations, cited rules, consequences, and concrete fixes. |
 | [`clean-architecture`](skills/clean-architecture/SKILL.md) | Robert C. Martin's Clean Architecture: the dependency rule, layer responsibilities, ports and adapters, forbidden patterns, review checklist. |
 | [`domain-driven-design`](skills/domain-driven-design/SKILL.md) | Eric Evans' Domain-Driven Design: ubiquitous language, bounded contexts, aggregates, repositories, factories, specifications, anti-corruption layers. |
+| [`pentest-dispatch`](skills/pentest-dispatch/SKILL.md) | Orchestrates an authorized penetration test across parallel subagents — scope-locked recon, API/auth mapping, web/API/cloud/auth/business-logic testing, and synthesis — with always-on guardrails (no DoS, SE, PII exfil, or out-of-scope probing). |
 
 The two rulebook skills are **verbatim downloads** of the upstream documents (see
 [Sources](#sources)), wrapped in a `SKILL.md` that tells the agent to read them in full. They are
@@ -76,6 +77,18 @@ Codex discovers skills in `.agents/skills` (walking from the working directory u
 and in `$HOME/.agents/skills`. Type `$` in the CLI to invoke one explicitly, or let Codex match it
 implicitly against the description. Codex has no subagent format, so the reviewer is used as a skill
 there.
+
+### opencode
+
+```sh
+./install.sh opencode-user                   # ~/.config/opencode/skills, all sessions
+./install.sh opencode-project ~/code/my-app  # one repository
+```
+
+opencode discovers skills in `.opencode/skills` (walking from the working directory up to the repo
+root) and in `~/.config/opencode/skills`. It also reads the `.claude/skills` and `.agents/skills`
+locations, so a `claude-*` or `codex-*` install is picked up too; the `opencode-*` targets install
+to opencode's own directories.
 
 ### Any other agent
 
