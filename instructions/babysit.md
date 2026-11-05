@@ -1,0 +1,3 @@
+## Change and PR delivery
+
+For implementation, fixes, refactors, and PR delivery tasks, MUST read and follow the installed `babysit-the-change-or-pr` skill (`ai-skills:babysit-the-change-or-pr` when namespaced) before making changes. Apply it through the delivery stage authorized by the user, using authorization already given in the session. Its installation does not itself authorize pushing, merging, deploying, or restarting services. Do not apply it to read-only questions, status lookups, or unrelated tasks. If the skill is missing, report the missing installation explicitly and restore it from `pavel-d/skills` before proceeding with change delivery.

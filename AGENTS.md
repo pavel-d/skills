@@ -6,12 +6,13 @@ both Claude Code and Codex.
 
 ## Available skills
 
-| Skill | Read when |
-| --- | --- |
-| [`architecture-review`](skills/architecture-review/SKILL.md) | Reviewing a diff, branch, or module against the Clean Architecture and DDD rulebooks. Loads both rulebooks and reports violations. |
-| [`clean-architecture`](skills/clean-architecture/SKILL.md) | Writing, placing, reviewing, or refactoring code in a layered codebase: dependency direction, use-case boundaries, ports and adapters, keeping frameworks/DB/UI replaceable. |
-| [`domain-driven-design`](skills/domain-driven-design/SKILL.md) | Modeling a business domain: ubiquitous language, bounded contexts, entities vs value objects, aggregate boundaries, repositories, factories, specifications, anti-corruption layers. |
-| [`pentest-dispatch`](skills/pentest-dispatch/SKILL.md) | Coordinating an authorized, scope-locked penetration test across parallel subagents (recon → fan-out → synthesis). Requires written authorization and a locked `scope.json`; enforces no-DoS/SE/PII/out-of-scope guardrails. |
+| Skill                                                                  | Read when                                                                                                                                                                                                                    |
+| ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`babysit-the-change-or-pr`](skills/babysit-the-change-or-pr/SKILL.md) | Implementing a change or carrying a PR through its authorized delivery stage; not for read-only questions or status lookups.                                                                                                 |
+| [`architecture-review`](skills/architecture-review/SKILL.md)           | Reviewing a diff, branch, or module against the Clean Architecture and DDD rulebooks. Loads both rulebooks and reports violations.                                                                                           |
+| [`clean-architecture`](skills/clean-architecture/SKILL.md)             | Writing, placing, reviewing, or refactoring code in a layered codebase: dependency direction, use-case boundaries, ports and adapters, keeping frameworks/DB/UI replaceable.                                                 |
+| [`domain-driven-design`](skills/domain-driven-design/SKILL.md)         | Modeling a business domain: ubiquitous language, bounded contexts, entities vs value objects, aggregate boundaries, repositories, factories, specifications, anti-corruption layers.                                         |
+| [`pentest-dispatch`](skills/pentest-dispatch/SKILL.md)                 | Coordinating an authorized, scope-locked penetration test across parallel subagents (recon → fan-out → synthesis). Requires written authorization and a locked `scope.json`; enforces no-DoS/SE/PII/out-of-scope guardrails. |
 
 An agent that does not auto-discover skills should read the relevant `SKILL.md` in full before
 starting work that matches its trigger conditions, and treat it as binding policy for that task.
@@ -32,6 +33,14 @@ lost. Current local modifications:
   architectural compromise stands.
 
 ## Authoring rules for this repo
+
+- Keep root `plugin.json`, `.codex-plugin/plugin.json`, and `.claude-plugin/plugin.json`
+  synchronized for plugin identity, version, and shared metadata. Codex uses
+  `.agents/plugins/marketplace.json`; Claude Code uses `.claude-plugin/marketplace.json`.
+- Keep the babysit workflow in its skill. Global instruction files contain only the activation
+  rule from `instructions/babysit.md`, installed by `configure-babysit.py`.
+- Run `make format`, `make format-check`, and `make test` for plugin and babysit integration changes.
+  Do not reformat vendored rulebooks or unrelated skills.
 
 A skill directory contains:
 

@@ -1,0 +1,29 @@
+{
+  "name": "ai-skills",
+  "version": "0.2.0",
+  "description": "Portable engineering skills for coding agents. Works with Claude Code and Codex from the same SKILL.md files.",
+  "author": {
+    "name": "pavel-d",
+    "email": "pavlo.dot@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "skills",
+    "architecture",
+    "clean-architecture",
+    "code-review",
+    "refactoring",
+    "delivery",
+    "pull-requests",
+    "babysit"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "AI Skills",
+    "shortDescription": "Engineering and PR delivery",
+    "longDescription": "Portable architecture, domain modeling, review, and authorized change-delivery workflows for coding agents.",
+    "developerName": "pavel-d",
+    "category": "Developer Tools",
+    "capabilities": []
+  }
+}
