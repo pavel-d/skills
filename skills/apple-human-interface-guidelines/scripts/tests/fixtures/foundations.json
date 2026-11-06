@@ -1,0 +1,57 @@
+{
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "metadata": {
+    "title": "Foundations"
+  },
+  "references": {
+    "doc://com.apple.HIG/design/Human-Interface-Guidelines/accessibility": {
+      "identifier": "doc://com.apple.HIG/design/Human-Interface-Guidelines/accessibility",
+      "images": [
+        {
+          "identifier": "accessibility.svg",
+          "type": "icon"
+        },
+        {
+          "identifier": "foundations-accessibility-thumbnail.png",
+          "type": "card"
+        }
+      ],
+      "kind": "article",
+      "role": "article",
+      "title": "Accessibility",
+      "type": "topic",
+      "url": "/design/human-interface-guidelines/accessibility"
+    },
+    "doc://com.apple.HIG/design/Human-Interface-Guidelines/app-icons": {
+      "identifier": "doc://com.apple.HIG/design/Human-Interface-Guidelines/app-icons",
+      "images": [
+        {
+          "identifier": "app-icons.svg",
+          "type": "icon"
+        },
+        {
+          "identifier": "foundations-app-icons-thumbnail.png",
+          "type": "card"
+        }
+      ],
+      "kind": "article",
+      "role": "article",
+      "title": "App icons",
+      "type": "topic",
+      "url": "/design/human-interface-guidelines/app-icons"
+    }
+  },
+  "topicSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.HIG/design/Human-Interface-Guidelines/accessibility",
+        "doc://com.apple.HIG/design/Human-Interface-Guidelines/app-icons"
+      ]
+    }
+  ],
+  "primaryContentSections": []
+}

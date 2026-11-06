@@ -6,13 +6,14 @@ both Claude Code and Codex.
 
 ## Available skills
 
-| Skill                                                                  | Read when                                                                                                                                                                                                                    |
-| ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [`babysit-the-change-or-pr`](skills/babysit-the-change-or-pr/SKILL.md) | Implementing a change or carrying a PR through its authorized delivery stage; not for read-only questions or status lookups.                                                                                                 |
-| [`architecture-review`](skills/architecture-review/SKILL.md)           | Reviewing a diff, branch, or module against the Clean Architecture and DDD rulebooks. Loads both rulebooks and reports violations.                                                                                           |
-| [`clean-architecture`](skills/clean-architecture/SKILL.md)             | Writing, placing, reviewing, or refactoring code in a layered codebase: dependency direction, use-case boundaries, ports and adapters, keeping frameworks/DB/UI replaceable.                                                 |
-| [`domain-driven-design`](skills/domain-driven-design/SKILL.md)         | Modeling a business domain: ubiquitous language, bounded contexts, entities vs value objects, aggregate boundaries, repositories, factories, specifications, anti-corruption layers.                                         |
-| [`pentest-dispatch`](skills/pentest-dispatch/SKILL.md)                 | Coordinating an authorized, scope-locked penetration test across parallel subagents (recon → fan-out → synthesis). Requires written authorization and a locked `scope.json`; enforces no-DoS/SE/PII/out-of-scope guardrails. |
+| Skill                                                                                  | Read when                                                                                                                                                                                                                    |
+| -------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`apple-human-interface-guidelines`](skills/apple-human-interface-guidelines/SKILL.md) | Designing, implementing, or reviewing Apple platform interfaces using HIG foundations, patterns, components, inputs, and technologies; not generic web styling or backend-only work.                                         |
+| [`babysit-the-change-or-pr`](skills/babysit-the-change-or-pr/SKILL.md)                 | Implementing a change or carrying a PR through its authorized delivery stage; not for read-only questions or status lookups.                                                                                                 |
+| [`architecture-review`](skills/architecture-review/SKILL.md)                           | Reviewing a diff, branch, or module against the Clean Architecture and DDD rulebooks. Loads both rulebooks and reports violations.                                                                                           |
+| [`clean-architecture`](skills/clean-architecture/SKILL.md)                             | Writing, placing, reviewing, or refactoring code in a layered codebase: dependency direction, use-case boundaries, ports and adapters, keeping frameworks/DB/UI replaceable.                                                 |
+| [`domain-driven-design`](skills/domain-driven-design/SKILL.md)                         | Modeling a business domain: ubiquitous language, bounded contexts, entities vs value objects, aggregate boundaries, repositories, factories, specifications, anti-corruption layers.                                         |
+| [`pentest-dispatch`](skills/pentest-dispatch/SKILL.md)                                 | Coordinating an authorized, scope-locked penetration test across parallel subagents (recon → fan-out → synthesis). Requires written authorization and a locked `scope.json`; enforces no-DoS/SE/PII/out-of-scope guardrails. |
 
 An agent that does not auto-discover skills should read the relevant `SKILL.md` in full before
 starting work that matches its trigger conditions, and treat it as binding policy for that task.
@@ -41,6 +42,9 @@ lost. Current local modifications:
   rule from `instructions/babysit.md`, installed by `configure-babysit.py`.
 - Run `make format`, `make format-check`, and `make test` for plugin and babysit integration changes.
   Do not reformat vendored rulebooks or unrelated skills.
+- The Apple HIG skill contains original notes and generated source metadata, not vendored article
+  bodies. Refresh with `make refresh-hig`; validate with `make check-hig` and `make test-hig`.
+  Preserve the distinction between original commentary, Apple source metadata, and remote images.
 
 A skill directory contains:
 

@@ -8,13 +8,14 @@ common denominator across agents — plus `references/` for material loaded only
 
 ## Skills
 
-| Skill                                                                  | What it does                                                                                                                                                                                                                                         |
-| ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [`babysit-the-change-or-pr`](skills/babysit-the-change-or-pr/SKILL.md) | Carries code changes and PRs through the authorized stage: local validation, review, CI, merge, publication, automatic deployment, and live verification.                                                                                            |
-| [`architecture-review`](skills/architecture-review/SKILL.md)           | Reviews a diff, branch, or module against both rulebooks below and reports violations with locations, cited rules, consequences, and concrete fixes.                                                                                                 |
-| [`clean-architecture`](skills/clean-architecture/SKILL.md)             | Robert C. Martin's Clean Architecture: the dependency rule, layer responsibilities, ports and adapters, forbidden patterns, review checklist.                                                                                                        |
-| [`domain-driven-design`](skills/domain-driven-design/SKILL.md)         | Eric Evans' Domain-Driven Design: ubiquitous language, bounded contexts, aggregates, repositories, factories, specifications, anti-corruption layers.                                                                                                |
-| [`pentest-dispatch`](skills/pentest-dispatch/SKILL.md)                 | Orchestrates an authorized penetration test across parallel subagents — scope-locked recon, API/auth mapping, web/API/cloud/auth/business-logic testing, and synthesis — with always-on guardrails (no DoS, SE, PII exfil, or out-of-scope probing). |
+| Skill                                                                                  | What it does                                                                                                                                                                                                                                         |
+| -------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`apple-human-interface-guidelines`](skills/apple-human-interface-guidelines/SKILL.md) | Apple platform design and HIG reviews, with original guidance, a comprehensive Markdown topic catalog, official full-Markdown links, and Apple-hosted image references.                                                                              |
+| [`babysit-the-change-or-pr`](skills/babysit-the-change-or-pr/SKILL.md)                 | Carries code changes and PRs through the authorized stage: local validation, review, CI, merge, publication, automatic deployment, and live verification.                                                                                            |
+| [`architecture-review`](skills/architecture-review/SKILL.md)                           | Reviews a diff, branch, or module against both rulebooks below and reports violations with locations, cited rules, consequences, and concrete fixes.                                                                                                 |
+| [`clean-architecture`](skills/clean-architecture/SKILL.md)                             | Robert C. Martin's Clean Architecture: the dependency rule, layer responsibilities, ports and adapters, forbidden patterns, review checklist.                                                                                                        |
+| [`domain-driven-design`](skills/domain-driven-design/SKILL.md)                         | Eric Evans' Domain-Driven Design: ubiquitous language, bounded contexts, aggregates, repositories, factories, specifications, anti-corruption layers.                                                                                                |
+| [`pentest-dispatch`](skills/pentest-dispatch/SKILL.md)                                 | Orchestrates an authorized penetration test across parallel subagents — scope-locked recon, API/auth mapping, web/API/cloud/auth/business-logic testing, and synthesis — with always-on guardrails (no DoS, SE, PII exfil, or out-of-scope probing). |
 
 The two rulebook skills are **verbatim downloads** of the upstream documents (see
 [Sources](#sources)), wrapped in a `SKILL.md` that tells the agent to read them in full. They are
@@ -160,13 +161,16 @@ instructions until refreshed or restarted.
 ## Development checks
 
 The formatting commands use pinned Prettier and Ruff versions through `npx` and `uvx`.
-They cover the plugin and babysit integration files; upstream rulebooks remain verbatim.
+They cover plugin and babysit integration files plus the Apple HIG skill; upstream rulebooks remain verbatim.
 
 ```sh
 make format
 make format-check
 make test
 ```
+
+For the HIG skill alone, use `make format-hig`, `make check-hig`, and `make test-hig`.
+`make refresh-hig` refreshes its public source metadata, formats the output, and checks coverage.
 
 ## Sources
 
@@ -185,6 +189,15 @@ loudly if an upstream anchor has moved rather than silently dropping a change. L
 - **clean-architecture** — "When Tradeoffs Are Necessary" requires explicit user approval before an
   architectural compromise stands.
 - **domain-driven-design** — none; byte-identical to upstream.
+
+The [Apple HIG skill](skills/apple-human-interface-guidelines/SKILL.md) uses a different source
+model: original application notes plus a generated catalog of Apple's public topic and image
+metadata. Apple provides [official per-page Markdown downloads](https://developer.apple.com/design/human-interface-guidelines.md).
+The initial catalog covers 173 English pages, including foundations, patterns, all component
+groups, inputs, technologies, and platform introductions. It embeds remote Apple-hosted images;
+full article bodies and image bytes are not bundled. The repository's MIT license does not
+relicense Apple's content. See [research and provenance](skills/apple-human-interface-guidelines/references/research.md)
+for the download findings, coverage boundary, and refresh procedure.
 
 ## Adding a skill
 
