@@ -1,7 +1,7 @@
 {
   "name": "ai-skills",
   "displayName": "AI Skills",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Portable engineering skills for coding agents. Works with Claude Code and Codex from the same SKILL.md files.",
   "author": {
     "name": "pavel-d",
@@ -16,7 +16,10 @@
     "refactoring",
     "delivery",
     "pull-requests",
-    "babysit"
+    "babysit",
+    "apple",
+    "human-interface-guidelines",
+    "design"
   ],
   "skills": "./skills/"
 }

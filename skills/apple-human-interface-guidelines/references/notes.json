@@ -1,0 +1,677 @@
+{
+  "human-interface-guidelines": [
+    "Start with the target platform, then connect the relevant foundation, task pattern, component, input, and integration guidance."
+  ],
+  "getting-started": [
+    "Use the platform introductions to establish interaction expectations before choosing components or visual styling."
+  ],
+  "design-principles": [
+    "Evaluate whether the experience serves a meaningful purpose, supports familiar behavior, and accommodates different contexts.",
+    "Treat wording, feedback, transitions, and ongoing refinement as part of product quality."
+  ],
+  "designing-for-ios": [
+    "Prioritize the primary mobile task and check reachability, touch interaction, system navigation, and interruption recovery.",
+    "Adapt to supported displays and accessibility settings instead of treating one phone screenshot as the layout contract."
+  ],
+  "designing-for-ipados": [
+    "Design for changing window sizes and combinations of touch, keyboard, pointer, and Apple Pencil.",
+    "Use available space to support the task and its context; verify multitasking rather than merely enlarging phone layouts."
+  ],
+  "designing-for-macos": [
+    "Support sustained work through window management, menus, keyboard navigation, and appropriate document or selection behavior.",
+    "Choose familiar Mac controls and preserve context across resizing, multiple windows, and switching applications."
+  ],
+  "designing-for-tvos": [
+    "Check readability from a television viewing distance and navigation through remote focus.",
+    "Keep content easy to reach with a predictable focus path and visible selection feedback."
+  ],
+  "designing-for-visionos": [
+    "Choose windows, volumes, and immersion according to the task and the person's physical surroundings.",
+    "Evaluate targeting, viewing comfort, passthrough, and transitions with spatial input rather than assuming a flat-screen layout transfers unchanged."
+  ],
+  "designing-for-watchos": [
+    "Make useful information available in short interactions with clear, easily operated controls.",
+    "Consider the Digital Crown, complications, notifications, and glanceable content as connected entry points into the task."
+  ],
+  "designing-for-games": [
+    "Get people into play promptly with useful defaults and instruction integrated into gameplay.",
+    "Request setup or permissions when their purpose becomes clear, and support the platform's input and accessibility expectations."
+  ],
+  "designing-for-iphone-duo": [
+    "Preserve the current task when the device changes display configuration.",
+    "Consult the current device article for display and transition guidance; avoid fixed-size assumptions that discard context."
+  ],
+  "foundations": [
+    "Review accessibility, layout, typography, color, materials, privacy, and writing together because they shape every screen."
+  ],
+  "accessibility": [
+    "Check whether people can perceive the content, understand the controls, and complete the task with their preferred access methods.",
+    "Verify larger text and meaningful alternatives to visual, auditory, gesture-only, or motion-dependent information."
+  ],
+  "app-icons": [
+    "Create a recognizable identity with clear shapes and layers that remain legible in the system's presentations.",
+    "Use the current platform templates and production tools; check appearance variants before exporting assets."
+  ],
+  "branding": [
+    "Express identity through purposeful content, language, accent color, and typography while retaining recognizable interaction conventions.",
+    "Apply distinctive styling where it strengthens the task rather than making standard controls harder to identify."
+  ],
+  "color": [
+    "Assign consistent semantic meaning to colors and provide another cue for important distinctions.",
+    "Evaluate the palette in both appearances, higher contrast, different lighting, and supported displays."
+  ],
+  "dark-mode": [
+    "Respect system appearance and evaluate images, text, and surfaces in both light and dark contexts.",
+    "Use adaptive semantic values so custom backgrounds do not undermine contrast or hierarchy."
+  ],
+  "icons": [
+    "Use simple recognizable forms with consistent visual weight and optical alignment.",
+    "Choose familiar action metaphors and supply meaningful accessible descriptions where the icon carries information."
+  ],
+  "images": [
+    "Provide appropriate resolution and color information for supported displays.",
+    "Test real-device presentation and cropping instead of assuming a source asset's dimensions guarantee visual quality."
+  ],
+  "immersive-experiences": [
+    "Choose immersion deliberately and keep the person's awareness and comfort central to transitions.",
+    "Use environmental dimming or unbounded content only when it supports attention and the intended spatial experience."
+  ],
+  "inclusion": [
+    "Review copy and representations from perspectives beyond the design team's own experience.",
+    "Prefer understandable language and avoid assumptions about identity, ability, culture, or how people use the product."
+  ],
+  "layout": [
+    "Express importance through grouping, alignment, and predictable placement before adding decoration.",
+    "Verify resizing, safe areas, text expansion, changing device configurations, and progressive disclosure."
+  ],
+  "materials": [
+    "Use material to communicate interface layering and hierarchy, with clear separation between content and controls.",
+    "Consult current Liquid Glass guidance for placement and variants; evaluate contrast and avoid applying the effect indiscriminately."
+  ],
+  "motion": [
+    "Use animation to explain feedback, relationships, and transitions while keeping the task responsive.",
+    "Respect reduced-motion preferences and offer an understandable experience without decorative movement."
+  ],
+  "privacy": [
+    "Ask for the data needed for the current feature and explain the purpose where the request is made.",
+    "Prefer system privacy protections and on-device processing when appropriate; make data use understandable."
+  ],
+  "right-to-left": [
+    "Check alignment and directional behavior using the language of the content and platform conventions.",
+    "Test numbers, mixed-language text, symbols, and navigation individually rather than reversing every element."
+  ],
+  "sf-symbols": [
+    "Choose symbols that communicate the intended concept and align with surrounding text and control weight.",
+    "Check rendering mode, localization, accessibility, and availability rather than using a symbol name as a complete asset specification."
+  ],
+  "spatial-layout": [
+    "Place important content within a comfortable viewing area and account for depth and surrounding space.",
+    "Avoid layouts that force sustained awkward viewing or attach interface content rigidly to head movement."
+  ],
+  "typography": [
+    "Use readable text styles and a clear hierarchy across supported display and viewing contexts.",
+    "Verify weight, contrast, text scaling, and localization together instead of specifying font size alone."
+  ],
+  "writing": [
+    "Use a consistent product voice and adjust tone to the person's situation.",
+    "Make labels and instructions precise, concise, inclusive, and directly connected to the action or outcome."
+  ],
+  "patterns": [
+    "Select guidance by the person's task and include entry, pending work, completion, interruption, and recovery."
+  ],
+  "charting-data": [
+    "Choose a chart when it clarifies a meaningful relationship or comparison in the data.",
+    "Keep the initial presentation understandable and provide accessible ways to explore detail."
+  ],
+  "collaboration-and-sharing": [
+    "Make sharing easy to find and describe collaboration permissions in understandable terms.",
+    "Use the platform sharing experience and make the difference between sending a copy and shared editing clear."
+  ],
+  "drag-and-drop": [
+    "Support predictable movement or copying of appropriate content and communicate the result at the destination.",
+    "Provide another way to perform the operation and consider multiple-item transfers."
+  ],
+  "entering-data": [
+    "Reduce unnecessary entry with available system information and clearly explain required fields.",
+    "Choose suitable secure entry and validation behavior without inventing or prepopulating sensitive credentials."
+  ],
+  "feedback": [
+    "Place routine status near the affected interaction and reserve interruption for decisions needing attention.",
+    "Make feedback perceivable through appropriate alternatives and explain unexpected irreversible loss before commitment."
+  ],
+  "file-management": [
+    "Integrate familiar document creation, opening, and keyboard commands with the platform file model.",
+    "Preserve work predictably and make explicit deletion or cancellation distinguishable from ordinary navigation."
+  ],
+  "going-full-screen": [
+    "Use full screen when it benefits the activity while preserving access to essential controls.",
+    "Adapt layout without surprising window changes and retain expected system escape and navigation behavior."
+  ],
+  "launching": [
+    "Show useful content promptly and restore context so people can resume their work.",
+    "Treat required launch presentation separately from onboarding and avoid making a branding screen a routine delay."
+  ],
+  "live-viewing-apps": [
+    "Make live content prominent and quick to start while clearly communicating that it is live.",
+    "Provide useful progress or event context without obscuring the viewing experience."
+  ],
+  "loading": [
+    "Present useful information early and allow unrelated activity while work continues.",
+    "Explain unavoidable delays and consider background delivery of large assets where the platform supports it."
+  ],
+  "managing-accounts": [
+    "Explain account benefits and defer authentication until the task requires it.",
+    "Use recognizable authentication methods and consult platform guidance for passkeys and Sign in with Apple."
+  ],
+  "managing-notifications": [
+    "Match interruption level to actual urgency and relevance rather than engagement goals.",
+    "Keep promotional messaging subject to permission and separate from genuinely time-sensitive events."
+  ],
+  "modality": [
+    "Use interruption for a bounded task with a clear benefit and a reliable return path.",
+    "Keep modal work focused; reassess a flow that grows into an entire secondary application."
+  ],
+  "multitasking": [
+    "Preserve state as people switch tasks, resize windows, or encounter audio interruptions.",
+    "Finish appropriate initiated work in the background while pausing activities that need active participation."
+  ],
+  "offering-help": [
+    "Offer guidance for actual task difficulties using the same terms and visuals as the interface.",
+    "Keep assistance contextual and useful instead of documenting every familiar system control."
+  ],
+  "onboarding": [
+    "Teach unfamiliar behavior through relevant interaction and timely contextual guidance.",
+    "Keep prerequisites brief and make extended instruction optional when the task permits it."
+  ],
+  "playing-audio": [
+    "Respect the person's audio environment, interruptions, output routes, and system volume control.",
+    "Choose audio behavior according to the task and verify coexistence with other sound."
+  ],
+  "playing-haptics": [
+    "Use established haptic meanings consistently and sparingly.",
+    "Complement other feedback so understanding the result does not depend on feeling a vibration."
+  ],
+  "playing-video": [
+    "Prefer familiar playback controls and preserve the video's aspect ratio.",
+    "Evaluate presentation, captions, transport controls, and interruptions for the supported platforms."
+  ],
+  "printing": [
+    "Make printing discoverable when it is supported and present only relevant options.",
+    "Use platform printing UI before introducing application-specific print settings."
+  ],
+  "ratings-and-reviews": [
+    "Ask after meaningful engagement at a moment that does not interrupt the person's task.",
+    "Use the system rating mechanism and avoid repeated requests that become pressure."
+  ],
+  "searching": [
+    "Give search a discoverable place that matches its importance to the task.",
+    "Communicate scope and provide useful suggestions and understandable results."
+  ],
+  "settings": [
+    "Start with strong defaults and expose settings only when people have a meaningful reason to change them.",
+    "Place preferences where the platform expects them and avoid using settings as a substitute for thoughtful setup."
+  ],
+  "undo-and-redo": [
+    "Make reversals predictable and show their effects in the affected content.",
+    "Support a useful sequence of undoable work and label history actions by what they change."
+  ],
+  "workouts": [
+    "Prioritize relevant live data and easily operated workout controls.",
+    "Make the active session apparent and avoid unrelated interruptions during physical activity."
+  ],
+  "components": [
+    "Choose a component for its interaction semantics and platform behavior, then verify its article's platform considerations."
+  ],
+  "content": [
+    "Select content views according to the information being presented, edited, compared, or played."
+  ],
+  "layout-and-organization": [
+    "Use containers to express real hierarchy and relationships while preserving navigation and selection during resizing."
+  ],
+  "menus-and-actions": [
+    "Distinguish commands from navigation and value selection, and make important actions discoverable."
+  ],
+  "navigation-and-search": [
+    "Make location, hierarchy, current selection, and search scope understandable throughout a task."
+  ],
+  "presentation": [
+    "Choose the least disruptive presentation that provides sufficient space and a clear completion or dismissal path."
+  ],
+  "selection-and-input": [
+    "Choose controls by value type, number of choices, precision, and supported input methods."
+  ],
+  "status": [
+    "Communicate current state and progress where the information is useful without demanding unnecessary attention."
+  ],
+  "system-experiences": [
+    "Adapt content and actions to the constraints of system surfaces rather than reproducing a full app screen."
+  ],
+  "activity-rings": [
+    "Use Activity rings for their established activity measurements and a single person's progress.",
+    "Preserve their system meaning and appearance instead of repurposing them as generic metrics."
+  ],
+  "activity-views": [
+    "Offer context-appropriate sharing and actions through the familiar system activity presentation.",
+    "Avoid duplicating existing activities and give custom actions concise identifiable labels."
+  ],
+  "alerts": [
+    "Interrupt for a consequential decision or actionable problem rather than routine information.",
+    "Prefer less disruptive feedback for reversible everyday actions and avoid an alert as the first launch experience."
+  ],
+  "action-sheets": [
+    "Offer a concise set of choices connected to an action the person intentionally started.",
+    "Keep explanatory text short and use the platform's appropriate action-sheet or alternative presentation."
+  ],
+  "boxes": [
+    "Group a manageable set of related controls with spacing and alignment that clarify their relationship.",
+    "Add a short descriptive heading only when it improves understanding."
+  ],
+  "buttons": [
+    "Make the action clear through its label, visual emphasis, semantic role, and interaction feedback.",
+    "Check platform target sizes and custom pressed states; reserve destructive semantics for actions that can remove data."
+  ],
+  "charts": [
+    "Choose marks and axis ranges to preserve the meaning of the intended comparison.",
+    "Check labels, scales, accessibility, and whether combined marks clarify rather than distort the data."
+  ],
+  "collections": [
+    "Use recognizable grid or row arrangements for browsable items and make selection straightforward.",
+    "Consider a table for primarily textual records and add custom interactions only when the task benefits."
+  ],
+  "color-wells": [
+    "Represent color selection with a recognizable well and prefer the system color picker for adjustment."
+  ],
+  "column-views": [
+    "Expose successive hierarchy levels in adjacent columns, beginning with the root.",
+    "Allow useful column sizing and consider a preview or details for a selected leaf item."
+  ],
+  "combo-boxes": [
+    "Use a combo box when the person can select a suggestion or enter a value.",
+    "Provide relevant options, a meaningful initial value where appropriate, and a label explaining the expected content."
+  ],
+  "complications": [
+    "Surface essential changing information that is useful at a glance.",
+    "Support relevant complication families and route activation to the associated detail or task."
+  ],
+  "context-menus": [
+    "Keep commands few and relevant to the selected object or context.",
+    "Expose essential functionality through other discoverable interface paths as well."
+  ],
+  "controls": [
+    "Offer quick system-surface actions that are useful without opening the full app.",
+    "Use a meaningful symbol and keep the displayed state consistent with completed or remotely changed actions."
+  ],
+  "digit-entry-views": [
+    "Explain why a short digit sequence is requested and use secure entry where its meaning requires privacy."
+  ],
+  "disclosure-controls": [
+    "Hide secondary details behind a recognizable disclosure control when they are not immediately needed.",
+    "Use a descriptive label and make the expanded or collapsed state understandable."
+  ],
+  "dock-menus": [
+    "Provide a small set of valuable Mac commands through the Dock menu.",
+    "Keep those tasks available elsewhere so the menu is an additional entry point."
+  ],
+  "edit-menus": [
+    "Preserve standard editing commands and the gestures that reveal them.",
+    "Show commands appropriate to the selection and place custom operations near related standard ones."
+  ],
+  "gauges": [
+    "Explain the current measurement and its meaningful range with concise labels.",
+    "Use appearance to reinforce the quantity's interpretation rather than substituting a gauge for task progress."
+  ],
+  "home-screen-quick-actions": [
+    "Choose a stable set of high-value tasks with clear titles and familiar symbols.",
+    "Route each shortcut directly to the promised task rather than a generic landing screen."
+  ],
+  "image-views": [
+    "Use an image view to present visual content and assess contrast when adding overlaid text.",
+    "Use appropriate icon or symbol components when the content represents an interface command."
+  ],
+  "image-wells": [
+    "Make the current image and replacement behavior understandable.",
+    "Support standard clipboard commands when applicable and provide sensible behavior when no custom image remains."
+  ],
+  "labels": [
+    "Use labels for brief noneditable information with readable typography and semantic emphasis.",
+    "Allow useful text to be selected when doing so helps the person's task."
+  ],
+  "lists-and-tables": [
+    "Present textual records in scannable rows with concise content and clear selection feedback.",
+    "Support editing and appropriate row interactions where they belong to the task."
+  ],
+  "live-activities": [
+    "Represent a real ongoing event with a defined start and finish using concise current information.",
+    "Avoid advertising and unnecessary exposure of sensitive content on these glanceable surfaces."
+  ],
+  "lockups": [
+    "Use consistent image-and-text grouping and spacing so related television content is easy to scan.",
+    "Keep neighboring items visually coherent and evaluate focus presentation."
+  ],
+  "menus": [
+    "Use concise command labels and a predictable organization.",
+    "Represent unavailable actions according to platform expectations and check current guidance for icons and shortcuts."
+  ],
+  "notifications": [
+    "Make each notification informative and useful without repeatedly announcing the same event.",
+    "Distinguish external updates from problems best explained in the active interface."
+  ],
+  "ornaments": [
+    "Place frequently needed spatial controls near their window without crowding the content.",
+    "Evaluate stable placement, width, and visual balance when more than one ornament is present."
+  ],
+  "outline-views": [
+    "Use expandable rows for genuinely hierarchical data and expose hierarchy consistently in the first column.",
+    "Provide meaningful headings and appropriate sorting; use a flat table when the records have no hierarchy."
+  ],
+  "page-controls": [
+    "Indicate position within a manageable ordered set of pages.",
+    "Place the indicator predictably and keep any custom page symbols easy to distinguish."
+  ],
+  "panels": [
+    "Keep related inspection or adjustment tools close to the content being edited.",
+    "Favor focused controls and a title that explains the panel's purpose."
+  ],
+  "path-controls": [
+    "Represent a location or path in the content area with the appropriate standard or pop-up presentation.",
+    "Keep path display distinct from custom window-frame decoration."
+  ],
+  "pickers": [
+    "Use ordered, predictable choices and select a presentation suited to their number and meaning.",
+    "Keep selection near the relevant task and use the precision people actually need."
+  ],
+  "pop-up-buttons": [
+    "Use a compact selector for one value from a flat set of options.",
+    "Provide a useful initial selection and enough context to predict what the control contains."
+  ],
+  "popovers": [
+    "Present a limited amount of contextual information or functionality near its source.",
+    "Verify anchoring, available space, and dismissal behavior on each target platform."
+  ],
+  "progress-indicators": [
+    "Show measurable progress when it is known and an appropriate ongoing-work indication otherwise.",
+    "Keep reporting accurate and transition to determinate progress when the operation provides enough information."
+  ],
+  "pull-down-buttons": [
+    "Group related commands behind a clearly labeled action control.",
+    "Keep frequently needed actions easy to reach instead of placing every operation in one menu."
+  ],
+  "rating-indicators": [
+    "Make a displayed rating understandable and make adjustment easy when editing is supported.",
+    "Use a recognizable symbol and keep read-only and editable behavior clear."
+  ],
+  "scroll-views": [
+    "Preserve familiar scrolling inputs and communicate that more content is available.",
+    "Avoid competing same-direction scroll regions unless the interaction has been carefully justified and tested."
+  ],
+  "search-fields": [
+    "Explain searchable content or scope and offer timely results or suggestions.",
+    "Keep results easy to interpret and avoid making people infer the field's purpose from placement alone."
+  ],
+  "segmented-controls": [
+    "Expose a small coherent group of related choices with visible selection state.",
+    "Use consistent content types and avoid crowding too many segments into the available space."
+  ],
+  "sheets": [
+    "Use a sheet for a focused temporary task with clear completion and cancellation.",
+    "Reconsider the presentation when the flow becomes prolonged or its navigation obscures the underlying task."
+  ],
+  "sidebars": [
+    "Organize destinations or content hierarchies with understandable grouping and selection.",
+    "Support disclosure and customization when useful while preserving readable content as the layout adapts."
+  ],
+  "sliders": [
+    "Use a slider for a range where relative adjustment matters, with familiar directional behavior.",
+    "Provide another precise entry method when needed and use the dedicated system approach for audio volume."
+  ],
+  "snippets": [
+    "Keep assistant-presented results legible and focused within their constrained presentation.",
+    "Coordinate dialogue, custom result content, and system-provided actions so the next step is clear."
+  ],
+  "split-views": [
+    "Preserve the relationship between selected content and its detail across panes.",
+    "Design transitions through compact and intermediate widths and support meaningful transfers between panes."
+  ],
+  "status-bars": [
+    "Account for the system status region in content presentation.",
+    "Hide it temporarily only when appropriate to the experience and preserve expected access to system information."
+  ],
+  "steppers": [
+    "Keep the affected numeric value visibly associated with increment and decrement controls.",
+    "Offer a faster or direct entry method when the range makes repeated steps inefficient."
+  ],
+  "tab-bars": [
+    "Use tabs for primary destinations with understandable identities and stable access.",
+    "Choose a manageable set of destinations and consult platform guidance for adaptation and overflow."
+  ],
+  "tab-views": [
+    "Group closely related content areas under descriptive tabs.",
+    "Keep a pane's controls scoped to its own content and avoid replacing tab selection with an unrelated control metaphor."
+  ],
+  "text-fields": [
+    "Request short values with clear context, appropriate sizing, and the right entry behavior.",
+    "Use secure entry for private values and make the purpose understandable beyond transient placeholder text."
+  ],
+  "text-views": [
+    "Use a text view for substantial, editable, or specially formatted text.",
+    "Preserve legibility, appropriate keyboard behavior, and useful selection or editing interactions."
+  ],
+  "the-menu-bar": [
+    "Integrate application commands with established Mac menu structure and keyboard equivalents.",
+    "Keep the command organization stable so availability changes do not make menu locations unpredictable."
+  ],
+  "toggles": [
+    "Represent a clearly named binary state with a visibly distinguishable current value.",
+    "Choose the platform-appropriate toggle style and verify that its placement makes the affected setting clear."
+  ],
+  "token-fields": [
+    "Use tokens to make structured selections understandable within text entry.",
+    "Provide helpful suggestions and editing or conversion commands appropriate to the represented values."
+  ],
+  "toolbars": [
+    "Prioritize commands relevant to the current view and leave sufficient space for understandable controls.",
+    "Place secondary actions in an appropriate additional menu and check adaptation at narrower sizes."
+  ],
+  "top-shelf": [
+    "Offer a useful television entry point into fresh or personally relevant content.",
+    "Route directly to that content and keep the surface focused on viewing rather than advertising."
+  ],
+  "virtual-keyboards": [
+    "Choose an input layout appropriate to the value being entered.",
+    "Verify keyboard presentation and editing behavior without assuming a specific hardware or software keyboard is present."
+  ],
+  "watch-faces": [
+    "Help people preview and share faces that meaningfully showcase available complications.",
+    "Consider device compatibility and explain unsupported choices gracefully."
+  ],
+  "web-views": [
+    "Provide appropriate navigation for embedded web content and distinguish its role from the native task.",
+    "Use the platform's browser experience when the goal is general browsing rather than embedded content."
+  ],
+  "widgets": [
+    "Choose focused information and interactions that remain useful at a glance.",
+    "Check each supported family and system context and route deeper work to the corresponding place in the app."
+  ],
+  "windows": [
+    "Support fluid resizing and multiple-window workflows where appropriate to the platform.",
+    "Open windows at meaningful moments and preserve the standard system window controls and behavior."
+  ],
+  "inputs": [
+    "Design a consistent task across the input methods each platform supports, including alternatives to specialized gestures."
+  ],
+  "action-button": [
+    "Expose essential quick tasks with concise labels and use the system's instruction and activation experience.",
+    "Let the action complete within the person's current context when possible."
+  ],
+  "apple-pencil-and-scribble": [
+    "Respond immediately and naturally to drawing or writing input.",
+    "Honor the person's choices about Pencil and finger behavior and account for supported pressure or device interactions."
+  ],
+  "camera-control": [
+    "Keep capture controls recognizable with short names, suitable symbols, and meaningful value units.",
+    "Identify important slider values and verify the hardware interaction on supported devices."
+  ],
+  "digital-crown": [
+    "Use Crown input for predictable navigation or data inspection according to the current context.",
+    "Provide visible feedback that follows the speed and direction of the interaction."
+  ],
+  "eyes": [
+    "Design comfortable visual targets using standard components where possible.",
+    "Offer alternative interaction methods and verify spatial placement rather than relying on visual appearance alone."
+  ],
+  "focus-and-selection": [
+    "Keep focus transitions under the person's control and use familiar platform focus presentation.",
+    "Distinguish the item receiving input from selected content and maintain understandable movement between controls."
+  ],
+  "game-controls": [
+    "Choose controls appropriate to the game and platform, with clear visual and tactile feedback.",
+    "Check reachability and target size when virtual controls overlay gameplay."
+  ],
+  "gestures": [
+    "Honor familiar gesture meanings and respond promptly.",
+    "Provide another way to complete important actions and communicate unavailable interactions."
+  ],
+  "gyro-and-accelerometer": [
+    "Use motion sensing for a concrete benefit and assess whether movement is comfortable and appropriate.",
+    "Avoid making ordinary interface manipulation depend on device movement without a compelling task reason."
+  ],
+  "keyboards": [
+    "Support efficient keyboard navigation and preserve established command shortcuts.",
+    "Choose additional shortcuts for frequent app-specific tasks and check Full Keyboard Access."
+  ],
+  "nearby-interactions": [
+    "Relate physical distance and direction to a meaningful task with continuous understandable feedback.",
+    "Consider how movement changes the interaction instead of treating proximity as a context-free trigger."
+  ],
+  "pointing-devices": [
+    "Preserve standard mouse and trackpad gestures and provide coherent behavior across other supported inputs.",
+    "Verify hover, pointer access to hidden controls, and the transition between pointer and touch interaction."
+  ],
+  "remotes": [
+    "Use established remote gestures and predictable focus movement.",
+    "Make the result of each gesture apparent and justify any custom interaction."
+  ],
+  "technologies": [
+    "Use system integration guidance for the experience and the corresponding developer documentation for implementation contracts."
+  ],
+  "airplay": [
+    "Use recognizable media playback and routing behavior and stream the content people intend to share.",
+    "Check resolution, mirroring, and playback continuity with the system player where appropriate."
+  ],
+  "always-on": [
+    "Keep useful information legible with stable placement when the display enters its reduced-activity presentation.",
+    "Protect sensitive information and reduce emphasis on content that is no longer essential."
+  ],
+  "app-clips": [
+    "Deliver a complete focused task or meaningful demo with minimal setup.",
+    "Prioritize the immediate native experience rather than using the clip solely as an advertisement for installation."
+  ],
+  "app-shortcuts": [
+    "Expose common high-value tasks in language and options people can understand.",
+    "Check current app-schema guidance and provide appropriate clarification when a request needs more information."
+  ],
+  "apple-in-app-purchase": [
+    "Integrate purchase choices into the product experience with clear names and complete billing information.",
+    "Let people understand the value before committing and consult current purchase and subscription requirements."
+  ],
+  "apple-pay": [
+    "Use approved payment controls and present Apple Pay appropriately when supported and available.",
+    "Keep the action tied to payment or supported setup and verify branding and payment-sheet requirements."
+  ],
+  "augmented-reality": [
+    "Offer AR on capable hardware and make virtual content behave convincingly within the environment.",
+    "Consider placement, lighting, reflection, and the person's physical movement as part of the interaction."
+  ],
+  "carekit": [
+    "Explain health-data use clearly and request access when the related care feature needs it.",
+    "Keep system privacy controls authoritative rather than creating a competing permission model."
+  ],
+  "carplay": [
+    "Keep the in-car experience usable without requiring interaction with or unlocking the phone.",
+    "Let people initiate playback and use the approved interaction model for the supported app category."
+  ],
+  "game-center": [
+    "Place system game access where it fits menu interaction without conflicting with game controls.",
+    "Account for overlay presentation and use the provided artwork for relevant links."
+  ],
+  "generative-ai": [
+    "Give people meaningful control over generative features and set understandable expectations for their results.",
+    "Evaluate inclusion, responsibility, and usefulness in the actual task rather than adding generation without a clear purpose."
+  ],
+  "healthkit": [
+    "Ask for relevant health-data access at the time it becomes useful and explain the purpose.",
+    "Provide clear privacy information and rely on system settings for data-sharing permissions."
+  ],
+  "homekit": [
+    "Represent homes, rooms, and accessories consistently with the system model.",
+    "Support multiple homes and related accessory details without duplicating system home settings."
+  ],
+  "icloud": [
+    "Make continuity and synchronization understandable while keeping the experience straightforward.",
+    "Keep content current when possible and consider storage use rather than asking people to manage unnecessary cloud decisions."
+  ],
+  "id-verifier": [
+    "Request only the identity information needed and distinguish verification from transferring personal data.",
+    "Use the required system flow and identify the requesting organization appropriately."
+  ],
+  "imessage-apps-and-stickers": [
+    "Focus the extension on one coherent conversation-related experience.",
+    "Put essential interactions in the compact presentation and use expanded space for editing when appropriate."
+  ],
+  "live-photos": [
+    "Preserve the moving photo as a coherent item when editing or sharing.",
+    "Apply adjustments consistently and make download and playback availability understandable."
+  ],
+  "mac-catalyst": [
+    "Adapt the task for Mac keyboard, pointer, window, and multitasking expectations.",
+    "Review menus, drag and drop, and content organization rather than assuming an unchanged iPad presentation is sufficient."
+  ],
+  "machine-learning": [
+    "Ask for explicit feedback only when useful and keep participation voluntary.",
+    "Explain feedback options and their effects in direct language so people can make an informed choice."
+  ],
+  "maps": [
+    "Choose map presentation and emphasis according to the location task.",
+    "Support appropriate exploration, search, and clearly identifiable selection."
+  ],
+  "nfc": [
+    "Explain scanning in approachable language with concise instructions.",
+    "Support appropriate reading modes and avoid suggesting that the phone must physically touch the object."
+  ],
+  "photo-editing": [
+    "Keep editing integrated with the host photo experience and provide a useful preview.",
+    "Handle cancellation and discarded edits deliberately while preserving the system's extension presentation."
+  ],
+  "researchkit": [
+    "Introduce the study and determine eligibility in the appropriate sequence.",
+    "Make participation and consent understandable before asking people to commit."
+  ],
+  "shareplay": [
+    "Use shared activity for a meaningful real-time experience with an easy start.",
+    "Design around what participants do together and accommodate supported platforms."
+  ],
+  "shazamkit": [
+    "Limit recording to what recognition needs and stop promptly.",
+    "Let people choose whether recognized music is added to their cloud library."
+  ],
+  "sign-in-with-apple": [
+    "Ask for authentication at a point where account value is clear.",
+    "Use the system sign-in presentation and consider linking an existing account without creating unnecessary friction."
+  ],
+  "siri": [
+    "Expose useful common tasks using the vocabulary people associate with the app.",
+    "Offer relevant results and actions rather than using assistant interactions for promotion."
+  ],
+  "tap-to-pay-on-iphone": [
+    "Complete merchant setup and required administrative acceptance before a customer payment interaction.",
+    "Provide practical instruction for supported payment types and device readiness."
+  ],
+  "voiceover": [
+    "Describe meaningful controls and images with useful labels and values.",
+    "Make data visualizations understandable through accessible structure and omit decorative images from spoken navigation."
+  ],
+  "wallet": [
+    "Offer an understandable way to add relevant passes and group related passes when appropriate.",
+    "Use the prescribed Wallet controls and avoid presenting an add action for a pass already present."
+  ]
+}

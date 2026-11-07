@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "ai-skills",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Portable engineering skills for coding agents. Works with Claude Code and Codex from the same SKILL.md files.",
   "author": {
     "name": "pavel-d",
@@ -16,15 +16,18 @@
     "refactoring",
     "delivery",
     "pull-requests",
-    "babysit"
+    "babysit",
+    "apple",
+    "human-interface-guidelines",
+    "design"
   ],
   "repository": "https://github.com/pavel-d/skills",
   "extensions": {
     "com.openai": {
       "interface": {
         "displayName": "AI Skills",
-        "shortDescription": "Engineering and PR delivery",
-        "longDescription": "Portable architecture, domain modeling, review, and authorized change-delivery workflows for coding agents.",
+        "shortDescription": "Engineering, Apple design, and PR delivery",
+        "longDescription": "Portable architecture, domain modeling, Apple platform design, review, and authorized change-delivery workflows for coding agents.",
         "developerName": "pavel-d",
         "category": "Developer Tools",
         "capabilities": []

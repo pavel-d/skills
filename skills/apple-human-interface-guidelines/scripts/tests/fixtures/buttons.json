@@ -1,0 +1,71 @@
+{
+  "schemaVersion": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "metadata": {
+    "title": "Buttons"
+  },
+  "references": {
+    "buttons-roles-alert.png": {
+      "identifier": "buttons-roles-alert.png",
+      "type": "image",
+      "variants": [
+        {
+          "traits": ["2x", "light"],
+          "url": "/images/com.apple.HIG/buttons-roles-alert@2x.png"
+        },
+        {
+          "traits": ["2x", "dark"],
+          "url": "/images/com.apple.HIG/buttons-roles-alert~dark@2x.png"
+        }
+      ]
+    },
+    "components-buttons-intro.png": {
+      "identifier": "components-buttons-intro.png",
+      "type": "image",
+      "variants": [
+        {
+          "traits": ["2x", "light"],
+          "url": "/images/com.apple.HIG/components-buttons-intro@2x.png"
+        },
+        {
+          "traits": ["2x", "dark"],
+          "url": "/images/com.apple.HIG/components-buttons-intro~dark@2x.png"
+        }
+      ]
+    }
+  },
+  "topicSections": [],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Discussion"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "components-buttons-intro.png"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "buttons-roles-alert.png"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
